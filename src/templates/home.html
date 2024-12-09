@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}This is home{% endblock title %}
+{% block content %}
+This is home page
+<br>    
+{{user_name}}
+{% include "snippets/welcome.html" %}
+{{queryset}}
+<br>
+{{queryset.count}}
+{{qr.count}}
+{% endblock content %}
